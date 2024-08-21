@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 
 quit = False
 
-original_df = pd.read_csv('US_Crime_Rates_1960_2014.csv')
+original_df = pd.read_csv('data/US_Crime_Rates_1960_2014.csv')
 
-crimerates_df = pd.read_csv('US_Crime_Rates_1960_2014.csv')
+crimerates_df = original_df.drop(columns=['Violent','Property','Murder','Forcible_Rape','Robbery','Aggravated_assault','Burglary','Larceny_Theft','Vehicle_Theft'])
+crimerates_df.head()
 
 # functions:
 
@@ -39,15 +40,18 @@ def showgraph_popandtotal():
 
 def user_options():
      global quit
-     print("""Hi there, please choose an option from the following:
+     print("""
+           Hi there, please choose an option from the following:
+
            1 - This will show the original dataset
            2 - This will show the updated Data Frame
            3 - This will show a graph of the year and the total amount of crime
            4 - This will show a graph of the population and the total amount of crime
            5 - Leave program
+
            """)
      try:
-      choice = int(input('Please choose a number'))
+      choice = int(input('Please choose a number '))
 
       if choice == 1:
           showrawdata()
@@ -60,9 +64,9 @@ def user_options():
       elif choice == 5:
           quit = True
       else:
-          print('Please try again')
+          print('Please try again ')
      except:
-      print('Please enter a number')     
+      print('Please enter a number ')     
 
 while not quit:
     user_options()
