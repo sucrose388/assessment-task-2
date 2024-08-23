@@ -26,7 +26,7 @@ def showgraph_yearandtotal():
                     color='blue',
                     alpha=0.3,
                     title='Amount of crimes per year')
-      print("The x-axis is the year and the y-axis is the total amount of crime commited that year, if the x-axis reads 0.4 then that means that the real number is supposed to be 4,000,000. Sorry for any inconvenience.")
+      print("The x-axis is the year and the y-axis is the total amount of crime committed that year, if the x-axis reads 0.4 then that means that the real number is supposed to be 4,000,000. Sorry for any inconvenience.")
       plt.show()
 
 def showgraph_popandtotal():
@@ -37,7 +37,7 @@ def showgraph_popandtotal():
                     color='red',
                     alpha=0.3,
                     title='Amount of crime based on population')
-     print("The x-axis is the population, if the y-axis reads 1.8 then that means that the real number that is supposed to be there is 18,000,000. The y-axis is the total amount of crime commited that year, if the x-axis reads 0.4 then that means that the real number is supposed to be 4,000,000. Sorry for any inconvenience.")
+     print("The x-axis is the population, if the y-axis reads 1.8 then that means that the real number that is supposed to be there is 18,000,000. The y-axis is the total amount of crime committed that year, if the x-axis reads 0.4 then that means that the real number is supposed to be 4,000,000. Sorry for any inconvenience.")
      plt.show()
 
 def user_options():
